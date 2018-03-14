@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Prima aplicație web</title>
+        <link rel="stylesheet" href="first.css">
+        <script src="first.js"></script>
+    </head>
+    <body>
+        <div id="title">Prima aplicație web</div>
+        <div id="description">Aplicația preia numele și nota unui student și le salvează într-o bază de date pe server.</div>
+        <form id="form" action="insert.php" method="get">
+            <div>Nume şi prenume</div>
+            <div><input type="text" id="name" name="name" maxlength="50" onkeydown="markForRightValue(this)" /></div>
+
+            <div>Media finală</div>
+            <div><input type="text" id="grade" name="grade"  onkeydown="markForRightValue(this)" /></div>
+
+            <div><input type="button" id="insert" value="Trimite" onclick="verify();" /></div>
+            <div><input type="reset" id="reset" value="Resetează" /></div>
+        </form>
+    </body>
+</html>
